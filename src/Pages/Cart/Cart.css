@@ -1,0 +1,132 @@
+#cart-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+}
+
+.cart-item{
+    border: 1px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding:8px;
+    gap: 32px;
+    position: relative;
+    margin-bottom: 16px;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    & img{
+        width: 175px;
+        height: 150px;
+        border-radius: 8px;
+    }
+
+    & .label{
+        opacity: .7;
+    }
+
+    .cancel-btn{
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        & img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.inline-p{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.inline-p.small-font{
+    column-gap: 16px;
+    row-gap: 0;
+    margin: 8px 0;
+
+    & p{
+        font-size: 14px;
+    }
+}
+
+
+.form-container {
+    position: sticky;
+    top: 80px;
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        & label,
+        input,
+        textarea {
+            display: block;
+        }
+
+        & label {
+            margin-bottom: 4px;
+        }
+
+        & input,
+        textarea {
+            border-radius: 8px;
+            border: none;
+            background-color: #D9D9D9;
+            font-size: 16px;
+            padding: 2px 4px;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        & button {
+            margin-top: 12px;
+            display: block;
+        }
+    }
+}
+
+
+@media screen and (max-width:825px) {
+    #cart-section{
+        grid-template-columns: 1fr;
+    }
+
+    .form-container{
+        max-width: 600px;
+        margin: auto;
+
+        & form{
+            & input{
+                padding: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .cart-item{
+        display: block;
+        padding: 16px;
+
+        & img{
+            display: block;
+            margin: auto;
+            margin-bottom: 16px;
+        }
+    }
+
+    .form-container{
+        width: 95vw;
+    }
+}

@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Inder";
+  src: url("/font/Inder-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Imperial Script";
+  src: url("/font/ImperialScript-Regular.ttf") format("truetype");
+}
+
+:root {
+  --bg-color : #f9f5f6;
+  --chinese-red : #C90A1E;
+  --info-blue : #25CBE1;
+  --btn-color: #ECC35C;
+  --btn-hover-color: #EDAB00;
+
+  --body-font: "Inder", cursive;
+  --company-name-font: "imperial script", cursive;
+
+  --gapping-tape: 47px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bg-color);
+  font-family: var(--body-font);
+  padding: 0 5%;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+
+
+h1, h2{
+  font-size: 32px;
+  font-weight: normal;
+}
+
+
+p{
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.company-font{
+  font-family: var(--company-name-font);
+  font-size: 48px;
+}
+
+.font-48{
+  font-size: 48px;
+}
+
+.font-40{
+  font-size: 40px;
+}
+
+.font-32{
+  font-size: 32px;
+}
+
+.font-24{
+  font-size: 24px;
+}
+
+.font-20{
+  font-size: 20px;
+}
+
+.font-16{
+  font-size: 16px;
+}
+
+.font-14{
+  font-size: 14px;
+}
+
+.font-normal{
+  font-weight: normal;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.align-center{
+  text-align: center;
+}
+
+.logo{
+  height: 24px;
+}
+
+.chinese-red{
+  color: var(--chinese-red);
+}
+
+.info-blue{
+  color: var(--info-blue)
+}
+
+.bg-color{
+  color: var(--bg-color);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mb-4{
+  margin-bottom: 4px;
+}
+.mb-8{
+  margin-bottom: 8px;
+}
+.mb-16{
+  margin-bottom: 16px;
+}
+.mb-32{
+  margin-bottom: 32px;
+}
+.mb-64{
+  margin-bottom: 64px;
+}
+.mb-gapping-tape{
+  margin-bottom: var(--gapping-tape);
+}
+
+.mb-double-gapping-tape{
+  margin-bottom: calc(2* var(--gapping-tape));
+}
+
+
+
+.mt-8{
+  margin-top: 8px;
+}
+.mt-16{
+  margin-top: 16px;
+}
+.mt-32{
+  margin-top: 32px;
+}
+.mt-64{
+  margin-top: 64px;
+}
+.mt-gapping-tape{
+  margin-top: var(--gapping-tape);
+}
+.mt-double-gapping-tape{
+  margin-top: calc(2* var(--gapping-tape));
+}
+
+.width-64{
+  width: 64px;
+}
+
+.width-48{
+  width: 48px
+}
+
+
+
+.fw-button{
+  font-family: var(--body-font);
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding:7px 0 6px 0;
+  background-color: #ECC35C;
+
+  transition: background-color .5s;
+}
+
+.fw-button:hover{
+  background-color: #EDAB00;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 550px) {
+  body{
+    padding: 0 5px
+  }
+
+  h1, h2{
+    font-size: 25px;
+  }
+
+  .mobile-text-justify{
+    text-align: justify;
+  }
+}

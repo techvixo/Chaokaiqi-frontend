@@ -1,0 +1,380 @@
+#contact-now {
+    border: 1px solid;
+    padding: 5px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: var(--bg-color);
+
+    position: fixed;
+    right: 0;
+    top: 50%;
+
+    writing-mode: vertical-rl;
+
+}
+
+#landing-screen {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: calc(2* var(--gapping-tape));
+}
+
+.main-content {
+    width: 80%;
+}
+
+.slider-main {
+    height: 100%;
+
+    & div {
+        height: 100%;
+    }
+
+    & img {
+        height: 100%;
+    }
+}
+
+.title-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    /* background-color: red; */
+    margin-bottom: 32px;
+}
+
+.flex {
+    display: flex;
+    gap: 64px;
+}
+
+.brands {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brands-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    & .slick-list {
+        width: 64px;
+
+        & * {
+            border: none;
+        }
+    }
+
+    & img {
+        border-radius: 8px;
+        width: 64px;
+        height: 64px;
+        padding: 8px;
+        border: 1px solid;
+
+    }
+}
+
+/* product section starts form here  */
+
+.products-section {
+    margin-bottom: var(--gapping-tape);
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--gapping-tape)
+}
+
+.top-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+
+
+#show-all-products-btn {
+    display: block;
+    width: 270px;
+    text-align: center;
+    background-color: var(--btn-color);
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: calc(2* var(--gapping-tape));
+
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: var(--btn-hover-color);
+    }
+}
+
+
+/* contact section starts here  */
+.contact-section {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: calc(2 * var(--gapping-tape));
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .photo-slider {
+        width: 450px;
+        height: 450px;
+        overflow: hidden;
+
+        & img {
+            object-fit: contain;
+        }
+    }
+}
+
+.form-and-info {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 16px;
+
+    display: flex;
+    gap: 32px;
+
+    & h2 {
+        margin-top: 32px;
+    }
+
+    & .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.info-point {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--info-blue);
+}
+
+.form-container.home-form {
+    & form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        & label,
+        input,
+        textarea {
+            display: block;
+        }
+
+        & label {
+            margin-bottom: 4px;
+        }
+
+        & input,
+        textarea {
+            border-radius: 8px;
+            border: none;
+            background-color: #D9D9D9;
+            font-size: 16px;
+            padding: 2px 4px;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        & button {
+            margin-top: 12px;
+            display: block;
+        }
+    }
+}
+
+
+/* about us section starts here  */
+
+.about-us {
+
+    & .image-container {
+        width: 45%;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.content .info {
+    width: 45%;
+}
+
+.company-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+
+        transition: .5s;
+
+        &:hover {
+            scale: 1.1;
+            box-shadow: 5px 9px 5px #00000068;
+        }
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    #contact-now {
+        display: none;
+    }
+
+    #landing-screen {
+        flex-direction: column;
+
+        & h1 {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .title-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brands-logo {
+
+        .slick-list {
+            width: 100vw;
+        }
+    }
+
+    .brands {
+        margin-top: 32px;
+    }
+
+    /* product section starts here  */
+
+    .products-section {
+        & h2 {
+            text-align: center;
+        }
+
+        & .d-flex-between {
+            flex-direction: column;
+        }
+    }
+
+    .top-product-container {
+        justify-content: center;
+    }
+
+    /* contact section starts here  */
+    .contact-section {
+        & .d-flex-between {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        & .content {
+            flex-direction: column-reverse;
+
+            .photo-slider {
+                width: 90vw;
+                height: 90vw;
+            }
+        }
+
+        & .form-and-info {
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 32px;
+
+            & .info {
+                width: 100%;
+
+                & h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .form-container.home-form {
+        width: 100%;
+
+        & form {
+            & input {
+                padding: 8px 0;
+
+            }
+        }
+
+    }
+
+    /* about us section starts here  */
+
+    .about-us {
+        & .image-container {
+            width: 100%;
+        }
+
+        & .content {
+            flex-direction: column;
+            gap: 32px;
+
+            & .info {
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+        & .company-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                width: 45%;
+                height: 100px;
+            }
+        }
+    }
+}

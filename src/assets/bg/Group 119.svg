@@ -1,0 +1,18 @@
+<svg width="1592" height="1327" viewBox="0 0 1592 1327" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_89_2)">
+<ellipse cx="565.424" cy="547.369" rx="235.443" ry="204.779" fill="#25CBE1"/>
+<ellipse cx="1152.56" cy="730.911" rx="235.443" ry="204.779" fill="#25CBE1"/>
+<ellipse cx="857.699" cy="918.089" rx="235.443" ry="204.779" fill="#33EDB5"/>
+<ellipse cx="832.327" cy="662.999" rx="165.419" ry="143.875" fill="#FA3ADB" fill-opacity="0.47"/>
+<path d="M960.181 204L1025.93 380L1238.7 380L1066.56 488.774L1132.31 664.773L960.181 556L788.047 664.773L853.796 488.774L681.663 380L894.432 380L960.181 204Z" fill="#DE6868" fill-opacity="0.63"/>
+<path d="M430.289 612.819L496.136 789.082H709.223L536.832 898.019L602.68 1074.28L430.289 965.345L257.898 1074.28L323.745 898.019L151.355 789.082H364.441L430.289 612.819Z" fill="#9C81E9"/>
+<path d="M564.409 459.103L630.257 635.366H843.344L670.953 744.303L736.8 920.566L564.409 811.629L392.019 920.566L457.866 744.303L285.475 635.366H498.562L564.409 459.103Z" fill="#D4E375"/>
+</g>
+<defs>
+<filter id="filter0_f_89_2" x="-52.6455" y="0" width="1644.65" height="1326.87" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="102" result="effect1_foregroundBlur_89_2"/>
+</filter>
+</defs>
+</svg>

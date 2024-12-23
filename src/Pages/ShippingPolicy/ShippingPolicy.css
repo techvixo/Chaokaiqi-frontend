@@ -1,0 +1,58 @@
+.shipping-policy {
+    min-height: 100vh;
+
+    & h1 {
+        text-align: center;
+        margin-bottom: 32px;
+        color: var(--chinese-red);
+    }
+
+    & img.main-img {
+        width: 100%;
+        border-radius: 32px;
+        height: 50vh;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 32px;
+    }
+
+
+    & h2 {
+        font-size: 24px;
+        ;
+    }
+
+    & small {
+        display: block;
+        margin-bottom: 16px;
+
+        & span {
+            text-decoration: underline;
+        }
+    }
+}
+
+.shipping-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+    align-items: center;
+
+    & div{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        & img{
+            width: 64px;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .shipping-info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
