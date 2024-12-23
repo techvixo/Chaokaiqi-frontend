@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite -> multilingual
 
 axios instance base url change between backend site and localhost
 
